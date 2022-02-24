@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator-container">
+        <div id="display">
+    <div id="displayinput">
+  
+    </div>
+    <div id="displayoutput">
+        
+    </div>
+</div>
+    <div id="controls">
+
+        <div id="operators-0" class="digits">
+            <button class="control-button" onclick="clearallbutton()">
+            AC
+            </button>
+            <button class="control-button" onclick="controlsfunction2('neg')">
+               +/-
+                </button>
+                <button class="control-button" onclick="digitfunction('(')">
+                    (
+                    </button>
+                    <button class="control-button" onclick="digitfunction(')')">
+                    )
+                        </button>
+        </div>
+        <div id="operators-1" class="digits">
+            <button class="control-button" onclick="clearbutton()">
+            C
+            </button>
+            <button class="control-button" onclick="controlsfunction2('sqrt')">
+               &#x221A;x
+                </button>
+                <button class="control-button" onclick="controlsfunction2('square')">
+                    x<sup>2</sup>
+                    </button>
+                    <button class="control-button" onclick="digitfunction('/')">
+                        /
+                        </button>
+        </div>
+        <div class="digits">
+    <button class="control-button" onclick="digitfunction('7')">7</button>
+    <button class="control-button" onclick="digitfunction('8')">8</button>
+    <button class="control-button" onclick="digitfunction('9')">9</button>
+    <button class="control-button" onclick="digitfunction('*')">*</button>
+ 
+    
+        </div>
+        <div class="digits">
+            <button class="control-button" onclick="digitfunction('4')">4</button>
+            <button class="control-button" onclick="digitfunction('5')">5</button>
+            <button class="control-button" onclick="digitfunction('6')">6</button>
+            <button class="control-button" onclick="digitfunction('-')">-</button>
+        </div>
+        <div class="digits">
+            <button class="control-button" onclick="digitfunction('1')">1</button>
+            <button class="control-button" onclick="digitfunction('2')">2</button>
+            <button class="control-button" onclick="digitfunction('3')">3</button>
+            <button class="control-button" onclick="digitfunction('+')">+</button>
+        </div>
+        <div id="operators-down" class="digits">
+            <button class="control-button" onclick="digitfunction('00')">00</button>
+            <button class="control-button" onclick="digitfunction('0')">0</button>
+            <button class="control-button" onclick="digitfunction('.')">.</button>
+            <button class="control-button" onclick="evaluation()">=</button>
+           
+        </div>
+    </div>
+
+    </div>
+   
+    <button id="history" onclick="backtrack()">History</button>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
