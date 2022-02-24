@@ -86,3 +86,8 @@ button:hover{
     color: aliceblue;
     border-radius: 20px;
 width: 200px;}
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
